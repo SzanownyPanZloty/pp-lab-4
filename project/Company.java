@@ -2,7 +2,6 @@ package project;
 
 public class Company {
   public static void main(String[] args) {
-    // create employe array
     Employee[] Employees = {
         new Employee("John Doe", 5060),
         new Employee("Alex Brown", 60300),
@@ -11,11 +10,11 @@ public class Company {
         new Employee("Jill Doe", 8200),
     };
 
-    System.out.println(Employees[3].getName() + " " + Employees[3].getSalary());
+    System.out.println(Employees[3].toString());
     Employees[3].setSalary(356000);
 
     for (Employee employee : Employees) {
-      System.out.println(employee.getName() + " " + employee.getSalary());
+      System.out.println(employee.toString());
     }
 
   }
