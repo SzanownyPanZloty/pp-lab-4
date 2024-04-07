@@ -1,4 +1,4 @@
-package project;
+package project.employees;
 
 public class Employee {
   private String fullName;
