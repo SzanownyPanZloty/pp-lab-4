@@ -15,8 +15,21 @@ public class Company {
         new Worker("Jill Doe", 8200, "random position 2"),
     };
 
+    // count number of non Mangager employees
+    int count = 0;
+    for (Employee employee : Employees) {
+      if (!(employee instanceof Manager)) {
+        count++;
+      }
+    }
+    ((Manager) Employees[0]).setNumberOfSubordinates(count);
+    ((Manager) Employees[0]).setSalary(7500);
+
+    // ! Pozostałość z zadania 1.
     System.out.println(Employees[3].toString());
     Employees[3].setSalary(356000);
+
+    System.out.println("--------------------------------");
 
     for (Employee employee : Employees) {
       System.out.println(employee.toString());
